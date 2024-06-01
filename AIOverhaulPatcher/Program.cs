@@ -177,21 +177,21 @@ namespace AIOverhaulPatcher
                     change = true;
                 }
 
-                if (npc.Items!=null)
-                {
-                    if (patchNpc.Items == null )
-                    {
-                        patchNpc.Items  = new ExtendedList<ContainerEntry>();
-                    }
-                    foreach (var item in npc.Items)
-                    {
-                        if (!patchNpc.Items.Contains(item))
-                        {
-                            patchNpc.Items.Add(item.DeepCopy());
-                            change = true;
-                        }
-                    } 
-                } 
+               // if (npc.Items!=null)
+               //{
+               //     if (patchNpc.Items == null )
+               //     {
+               //         patchNpc.Items  = new ExtendedList<ContainerEntry>();
+               //     }
+               //     foreach (var item in npc.Items)
+               //     {
+               //         if (!patchNpc.Items.Contains(item))
+               //         {
+               //             patchNpc.Items.Add(item.DeepCopy());
+               //             change = true;
+               //         }
+               //     } 
+               // } 
 
 
                 if (npc.AIData.Confidence != patchNpc.AIData.Confidence)
